@@ -36,7 +36,7 @@ The following table lists the common GitHub Actions workflow failures and resolu
 
 | Failure Scenario                    | Log Indication (Example)                                                                                   | Resolution Steps                                                                                                                                                                                                       |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Dependency Installation Failure** | `npm ERR! code ELIFECYCLE` <br> `ERROR: Could not find a version that satisfies the requirement...`        | • Validate package installation command (`npm ci`, `pip install -r requirements.txt`). <br>• Ensure correct runtime version in `actions/setup-node`, `actions/setup-python`, etc. <br>• Check for corrupted lockfiles. |
+| **Dependency Installation Failure** | `npm ERR! code ELIFECYCLE` <br> `ERROR: Could not find a version that satisfies the requirement...`        | • Validate package installation command (`npm ci`, `pip install -r requirements.txt`). <br>• Ensure correct runtime version in `actions/setup-node`, `actions/setup-python`, and so on. <br>• Check for corrupted lockfiles. |
 | **Test or Linter Failure**          | `Failing tests: 2` <br> `Linter found 10 errors.` <br> `Exited with code 1`                                | • Review test output for assertion failures. <br>• Fix code quality violations. <br>• Re-run locally to confirm.                                                                                                       |
 | **Artifact Not Found**              | `Error: The artifact 'app-dist' could not be downloaded.` <br> `Unable to find any artifacts for the run.` | • Ensure **artifact name matches** in upload and download steps. <br>• Confirm the upload step ran successfully. <br>• For matrix jobs, validate artifact naming per instance.                                            |
 | **Secret / Authentication Error**   | `Error 403: Forbidden` <br> `Unauthorized` <br> `Authentication failed for...`                             | • Verify secret exists in repository or environment. <br>• Check correct syntax (`${{ secrets.API_KEY }}`). <br>• Ensure job uses the correct environment (required for protected secrets).                                     |
@@ -81,6 +81,7 @@ Example:
   run: rm -rf temp/
 
 ```
+
 
 
 
