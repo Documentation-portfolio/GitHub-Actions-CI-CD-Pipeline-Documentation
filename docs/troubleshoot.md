@@ -12,7 +12,7 @@ The primary tool for workflow failure analysis is **Run Log**, **Status Check**,
 
 #### Step 1: Identify the failed job.
 - Open the workflow run.
-- In the **Summary** tab, view the failed job with a red X.
+- In the **Summary** tab, view the failed job with a red 'X'.
 - To view the individual steps, expand the job.
 #### Step 2: Locate the failed step.
 - Within the failed job, find the failed step with a red 'X'.
@@ -81,6 +81,7 @@ Example:
   run: rm -rf temp/
 
 ```
+
 
 
 
