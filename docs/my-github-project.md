@@ -1,8 +1,8 @@
 # Troubleshoot Workflows
 ## Table of Contents
-- [1. Troubleshooting Flow](#1-troubleshooting-flow)
-- [2. Common Failure Scenarios and Resolutions](#2-common-failure-scenarios-and-resolutions)
-- [3. Advanced Debugging Techniques](#3-advanced-debugging-techniques)
+- [Troubleshooting Flow](#1-troubleshooting-flow)
+- [Common Failure Scenarios and Resolutions](#2-common-failure-scenarios-and-resolutions)
+- [Advanced Debugging Techniques](#3-advanced-debugging-techniques)
 
 The purpose of this document is to guide you through failed workflows and help you identify failure sources, interpret logs, and apply fixes. 
 
@@ -81,4 +81,5 @@ Example:
   run: rm -rf temp/
 
 ```
+
 
