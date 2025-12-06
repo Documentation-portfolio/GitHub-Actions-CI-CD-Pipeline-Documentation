@@ -24,7 +24,7 @@ Analyze:
 - Runtime exceptions
 - Exit codes (For example, exited with code 1)
 
->**Tip:**The root cause of failure is mostly in the last 5-10 log lines before the failure message.
+>**Tip:** The root cause of failure is mostly in the last 5-10 log lines before the failure message.
 
 Example signals:
 - *Error: Cannot find module...*
@@ -81,6 +81,7 @@ Example:
   run: rm -rf temp/
 
 ```
+
 
 
 
