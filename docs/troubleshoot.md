@@ -57,8 +57,8 @@ ACTIONS_STEP_DEBUG = true
 
 >**Important:** Remove the secret after debugging to reduce log noise.
 
-#### Insert Diagnostic Steps
-Add a temporary diagnostic step before a suspicious step to inspect environment and filesystem state. The diagnostic steps helps validate file paths, confirm environment variable availability, and debug missing dependencies or build artifacts.
+#### Add a Diagnostic Step
+Add a temporary diagnostic step before a suspicious step to inspect environment and filesystem state. The diagnostic step helps validate file paths, confirm environment variable availability, and debug missing dependencies or build artifacts.
 ```
 - name: Debug Environment and Filesystem
   if: always()
@@ -81,6 +81,7 @@ Example:
   run: rm -rf temp/
 
 ```
+
 
 
 
