@@ -1,6 +1,6 @@
 # Troubleshoot Workflows
 ## Table of Contents
-- [Troubleshooting Flow](#1-troubleshooting-flow)
+- [Troubleshoot Flow](#1-troubleshooting-flow)
 - [Common Failure Scenarios and Resolutions](#2-common-failure-scenarios-and-resolutions)
 - [Advanced Debugging Techniques](#3-advanced-debugging-techniques)
 
@@ -81,5 +81,6 @@ Example:
   run: rm -rf temp/
 
 ```
+
 
 
